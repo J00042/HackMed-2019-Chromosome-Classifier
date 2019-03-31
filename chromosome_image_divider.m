@@ -1,6 +1,6 @@
 function chromosome_image_divider(folder, baseFileName, backgroundColour)
 %input: the path to the specified image file, the baseFileName, the greyscale threshold 
-%   to differentiate between background and colour (about 120 seems to work best on the 
+%   to differentiate between background and colour (about 220 seems to work best on the 
 %   images used at the hackathon).
 %HackMed 2019. 
 %A program to receive a grayscale image of chromosomes and produce seperate
