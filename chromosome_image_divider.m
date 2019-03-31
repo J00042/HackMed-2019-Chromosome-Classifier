@@ -1,9 +1,18 @@
 function chromosome_image_divider(folder, baseFileName, backgroundColour)
-%input: the path to the specified image file.
+%input: the path to the specified image file, the baseFileName, the greyscale threshold 
+%   to differentiate between background and colour (about 120 seems to work best on the 
+%   images used at the hackathon).
 %HackMed 2019. 
 %A program to receive a grayscale image of chromosomes and produce seperate
-% images of each individual chromosome. 
-%https://uk.mathworks.com/matlabcentral/fileexchange/25157-image-segmentation-tutorial
+%   images of each individual chromosome. 
+%This program was made by Jack Hutton with help from Mohammed Atwya and advice 
+%   from Nagham Yousef, Nazia Ahmed and Youssef Maharem in 24 Hoursat HackMed 2019 
+%   by modifying the Image Processing example program found at this link: 
+%   https://uk.mathworks.com/matlabcentral/fileexchange/25157-image-segmentation-tutorial
+%   As it was made rapidly at a Hackathon, the program is generally unorganised and not
+%   all comments will be consistent or correct.
+%NOTE: To output images to a folder, change the filepath here:
+outputPath = "C:\Users\Owner\Documents\HackMed 2019\chromosomes";
 
 %thresholdValue = 0;
 %binarySubImage=0;
@@ -290,7 +299,7 @@ if strcmpi(reply, 'Yes')
         title(caption);
         drawnow;
      %%SAVE THE IMAGE
-        imageFolder = "C:\Users\Owner\Documents\HackMed 2019\chromosomes";
+        imageFolder = outputPath;
         imageFileName = (['Chromosome_', num2str(k), '.png']);
         fullImageFileName = fullfile(imageFolder, imageFileName);
         imwrite(subImage, fullImageFileName);
