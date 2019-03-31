@@ -4,8 +4,9 @@ function chromosome_image_divider(folder, baseFileName, backgroundColour)
 %A program to receive a grayscale image of chromosomes and produce seperate
 % images of each individual chromosome. 
 %https://uk.mathworks.com/matlabcentral/fileexchange/25157-image-segmentation-tutorial
-thresholdValue = 0;
-binarySubImage=0;
+
+%thresholdValue = 0;
+%binarySubImage=0;
 %folder = "C:\Users\Owner\Documents\HackMed 2019"; baseFileName = "IMG00019_cropped.JPG";
 %% CHECK THE MATLAB IMAGE TOOLBOX IS PRESENT
 numberOfBlobs = 1;
